@@ -1,7 +1,11 @@
 # Update 
-fixed the Red tint when hovering over the xm8 apps button thanks to andrew_s90 (http://www.exilemod.com/profile/14063-andrew_s90/)
+Fixed the Red tint when hovering over the xm8 apps button thanks to andrew_s90 (http://www.exilemod.com/profile/14063-andrew_s90/)
 
 Added the much requested Go Back button to the Xm8 apps page 
+
+#Info 
+For any of you scripters out there Hollow is hosting a Xpm apps contest with a $50 prize. Go check it out http://www.exilemod.com/topic/9262-xm8-app-contest/
+
 
 # XM8-Apps
 
