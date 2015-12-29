@@ -33,21 +33,24 @@ _respect ctrlSetStructuredText parseText (format ["<t color='#00b2cd' font='Orbi
 // clear server info button text
 //Will set the text on the server info button to "XM8 Apps"
 _serverInfo = _display displayCtrl 1107; 
-_serverInfo ctrlSetText "XM8 Apps";
+_serverInfo ctrlSetText "";
+_serverInfo ctrlSetFade 1;
+_serverInfo ctrlCommit 0;
 
-xm8AppButtonText = {
-	_logo = "<t size='0.9'><img image='xm8Apps\images\xm8_app_applogo_ca.paa' size='3.5' shadow='true' /><br/>%1 %2</t>";
-	_this ctrlSetStructuredText parseText (format [_logo]);
-	//Overlays the apps logo on to the server info button 
-	//when mousing over the logo it will get a red tint I cant find a way to stop this 
-};
 
 openApps = {
-execVM"xm8Apps\XM8Apps_Init.sqf";
+	execVM"xm8Apps\XM8Apps_Init.sqf";
 };	
+_fix = "xm8Apps\images\xm8logofix_ca.paa";
 
-_newControl = _display ctrlCreate ["RscExileXM8ButtonMenu", 9898, _display displayCtrl 4040];
+_newIcon = _display ctrlCreate ["RscPicture", 9897, _display displayCtrl 4040];
+_newIcon ctrlSetPosition [(24.25 - 3) * (0.025), (15.5 - 2) * (0.04), 2.75 * (0.04), 2.75 * (0.04)];
+_newIcon ctrlCommit 0.01;
+_newIcon ctrlSetText _fix;
+
+
+_newControl = _display ctrlCreate ["RscExileXM8AppButton1x1", 9898, _display displayCtrl 4040];
 _newControl ctrlSetPosition [(23.5 - 3) * (0.025), (15 - 2) * (0.04)];
 _newControl ctrlCommit 0.01;
 _newControl ctrlSetEventHandler ["ButtonClick", "call openApps"];
-_newControl call xm8AppButtonText;
+_newControl ctrlSetStructuredText (parseText (format ["XM8 Apps"]));

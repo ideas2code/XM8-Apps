@@ -81,20 +81,20 @@ class XM8Apps
 		class App1_Btn: RscButton
 		{
 			idc = 1601;
+			onButtonClick = "call app1_action;";
 
-			x = 0.355644 * safezoneW + safezoneX;
-			y = 0.30208 * safezoneH + safezoneY;
+			x = 0.355663 * safezoneW + safezoneX;
+			y = 0.291085 * safezoneH + safezoneY;
 			w = 0.061867 * safezoneW;
 			h = 0.109955 * safezoneH;
-			onButtonClick = "call app1_action;";
 		};
 		class App1_txt: RscText
 		{
 			idc = 1000;
 
 			text = "App 1 Text"; //--- ToDo: Localize;
-			x = 0.355644 * safezoneW + safezoneX;
-			y = 0.368053 * safezoneH + safezoneY;
+			x = 0.355663 * safezoneW + safezoneX;
+			y = 0.357058 * safezoneH + safezoneY;
 			w = 0.061867 * safezoneW;
 			h = 0.0439822 * safezoneH;
 		};
@@ -103,28 +103,28 @@ class XM8Apps
 			idc = 1200;
 
 			text = "#(argb,8,8,3)color(1,1,1,1)"; //--- ToDo: Localize;
-			x = 0.360799 * safezoneW + safezoneX;
-			y = 0.313076 * safezoneH + safezoneY;
+			x = 0.360818 * safezoneW + safezoneX;
+			y = 0.30208 * safezoneH + safezoneY;
 			w = 0.0515558 * safezoneW;
 			h = 0.0659733 * safezoneH;
 		};
 		class App2_Btn: RscButton
 		{
 			idc = 1602;
+			onButtonClick = "call app2_action;";
 
-			x = 0.469067 * safezoneW + safezoneX;
-			y = 0.30208 * safezoneH + safezoneY;
+			x = 0.469071 * safezoneW + safezoneX;
+			y = 0.291085 * safezoneH + safezoneY;
 			w = 0.061867 * safezoneW;
 			h = 0.109955 * safezoneH;
-			onButtonClick = "call app2_action;";
 		};
 		class App2_txt: RscText
 		{
 			idc = 1001;
 
 			text = "App 2 Text"; //--- ToDo: Localize;
-			x = 0.469067 * safezoneW + safezoneX;
-			y = 0.368053 * safezoneH + safezoneY;
+			x = 0.469071 * safezoneW + safezoneX;
+			y = 0.357058 * safezoneH + safezoneY;
 			w = 0.061867 * safezoneW;
 			h = 0.0439822 * safezoneH;
 		};
@@ -133,28 +133,28 @@ class XM8Apps
 			idc = 1201;
 
 			text = "#(argb,8,8,3)color(1,1,1,1)"; //--- ToDo: Localize;
-			x = 0.474222 * safezoneW + safezoneX;
-			y = 0.313076 * safezoneH + safezoneY;
+			x = 0.474225 * safezoneW + safezoneX;
+			y = 0.30208 * safezoneH + safezoneY;
 			w = 0.0515558 * safezoneW;
 			h = 0.0659733 * safezoneH;
 		};
 		class App3_Btn: RscButton
 		{
 			idc = 1603;
+			onButtonClick = "call app3_action;";
 
-			x = 0.582489 * safezoneW + safezoneX;
-			y = 0.30208 * safezoneH + safezoneY;
+			x = 0.582479 * safezoneW + safezoneX;
+			y = 0.291085 * safezoneH + safezoneY;
 			w = 0.061867 * safezoneW;
 			h = 0.109955 * safezoneH;
-			onButtonClick = "call app3_action;";
 		};
 		class App3_txt: RscText
 		{
 			idc = 1002;
 
 			text = "App 3 Text"; //--- ToDo: Localize;
-			x = 0.582489 * safezoneW + safezoneX;
-			y = 0.368053 * safezoneH + safezoneY;
+			x = 0.582479 * safezoneW + safezoneX;
+			y = 0.357058 * safezoneH + safezoneY;
 			w = 0.061867 * safezoneW;
 			h = 0.0439822 * safezoneH;
 		};
@@ -163,28 +163,28 @@ class XM8Apps
 			idc = 1202;
 
 			text = "#(argb,8,8,3)color(1,1,1,1)"; //--- ToDo: Localize;
-			x = 0.587645 * safezoneW + safezoneX;
-			y = 0.313076 * safezoneH + safezoneY;
+			x = 0.587633 * safezoneW + safezoneX;
+			y = 0.30208 * safezoneH + safezoneY;
 			w = 0.0515558 * safezoneW;
 			h = 0.0659733 * safezoneH;
 		};
 		class App4_Btn: RscButton
 		{
 			idc = 1607;
+			onButtonClick = "call app4_action;";
 
-			x = 0.355644 * safezoneW + safezoneX;
-			y = 0.434027 * safezoneH + safezoneY;
+			x = 0.355663 * safezoneW + safezoneX;
+			y = 0.412036 * safezoneH + safezoneY;
 			w = 0.061867 * safezoneW;
 			h = 0.109955 * safezoneH;
-			onButtonClick = "call app4_action;";
 		};
 		class App4_txt: RscText
 		{
 			idc = 1003;
 
 			text = "App 4 Text"; //--- ToDo: Localize;
-			x = 0.355644 * safezoneW + safezoneX;
-			y = 0.5 * safezoneH + safezoneY;
+			x = 0.355663 * safezoneW + safezoneX;
+			y = 0.478009 * safezoneH + safezoneY;
 			w = 0.061867 * safezoneW;
 			h = 0.0439822 * safezoneH;
 		};
@@ -193,28 +193,28 @@ class XM8Apps
 			idc = 1203;
 
 			text = "#(argb,8,8,3)color(1,1,1,1)"; //--- ToDo: Localize;
-			x = 0.360799 * safezoneW + safezoneX;
-			y = 0.445022 * safezoneH + safezoneY;
+			x = 0.360818 * safezoneW + safezoneX;
+			y = 0.423031 * safezoneH + safezoneY;
 			w = 0.0515558 * safezoneW;
 			h = 0.0659733 * safezoneH;
 		};
 		class App5_Btn: RscButton
 		{
 			idc = 1604;
+			onButtonClick = "call app5_action;";
 
-			x = 0.469067 * safezoneW + safezoneX;
-			y = 0.434027 * safezoneH + safezoneY;
+			x = 0.469071 * safezoneW + safezoneX;
+			y = 0.412036 * safezoneH + safezoneY;
 			w = 0.061867 * safezoneW;
 			h = 0.109955 * safezoneH;
-			onButtonClick = "call app5_action;";
 		};
 		class App5_txt: RscText
 		{
 			idc = 1004;
 
 			text = "App 5 Text"; //--- ToDo: Localize;
-			x = 0.469067 * safezoneW + safezoneX;
-			y = 0.5 * safezoneH + safezoneY;
+			x = 0.469071 * safezoneW + safezoneX;
+			y = 0.478009 * safezoneH + safezoneY;
 			w = 0.061867 * safezoneW;
 			h = 0.0439822 * safezoneH;
 		};
@@ -223,28 +223,28 @@ class XM8Apps
 			idc = 1204;
 
 			text = "#(argb,8,8,3)color(1,1,1,1)"; //--- ToDo: Localize;
-			x = 0.474222 * safezoneW + safezoneX;
-			y = 0.445022 * safezoneH + safezoneY;
+			x = 0.474225 * safezoneW + safezoneX;
+			y = 0.423031 * safezoneH + safezoneY;
 			w = 0.0515558 * safezoneW;
 			h = 0.0659733 * safezoneH;
 		};
 		class App6_Btn: RscButton
 		{
 			idc = 1606;
+			onButtonClick = "call app6_action;";
 
-			x = 0.582489 * safezoneW + safezoneX;
-			y = 0.434027 * safezoneH + safezoneY;
+			x = 0.582479 * safezoneW + safezoneX;
+			y = 0.412036 * safezoneH + safezoneY;
 			w = 0.061867 * safezoneW;
 			h = 0.109955 * safezoneH;
-			onButtonClick = "call app6_action;";
 		};
 		class App6_txt: RscText
 		{
 			idc = 1005;
 
 			text = "App 6 Text"; //--- ToDo: Localize;
-			x = 0.582489 * safezoneW + safezoneX;
-			y = 0.5 * safezoneH + safezoneY;
+			x = 0.582479 * safezoneW + safezoneX;
+			y = 0.478009 * safezoneH + safezoneY;
 			w = 0.061867 * safezoneW;
 			h = 0.0439822 * safezoneH;
 		};
@@ -253,28 +253,28 @@ class XM8Apps
 			idc = 1205;
 
 			text = "#(argb,8,8,3)color(1,1,1,1)"; //--- ToDo: Localize;
-			x = 0.587645 * safezoneW + safezoneX;
-			y = 0.445022 * safezoneH + safezoneY;
+			x = 0.587633 * safezoneW + safezoneX;
+			y = 0.423031 * safezoneH + safezoneY;
 			w = 0.0515558 * safezoneW;
 			h = 0.0659733 * safezoneH;
 		};
 		class App7_Btn: RscButton
 		{
 			idc = 1608;
+			onButtonClick = "call app7_action;";
 
-			x = 0.355644 * safezoneW + safezoneX;
-			y = 0.565973 * safezoneH + safezoneY;
+			x = 0.355663 * safezoneW + safezoneX;
+			y = 0.532987 * safezoneH + safezoneY;
 			w = 0.061867 * safezoneW;
 			h = 0.109955 * safezoneH;
-			onButtonClick = "call app7_action;";
 		};
 		class App7_txt: RscText
 		{
 			idc = 1006;
 
 			text = "App 7 Text"; //--- ToDo: Localize;
-			x = 0.355644 * safezoneW + safezoneX;
-			y = 0.631947 * safezoneH + safezoneY;
+			x = 0.355663 * safezoneW + safezoneX;
+			y = 0.59896 * safezoneH + safezoneY;
 			w = 0.061867 * safezoneW;
 			h = 0.0439822 * safezoneH;
 		};
@@ -283,28 +283,28 @@ class XM8Apps
 			idc = 1206;
 
 			text = "#(argb,8,8,3)color(1,1,1,1)"; //--- ToDo: Localize;
-			x = 0.360799 * safezoneW + safezoneX;
-			y = 0.576969 * safezoneH + safezoneY;
+			x = 0.360818 * safezoneW + safezoneX;
+			y = 0.543982 * safezoneH + safezoneY;
 			w = 0.0515558 * safezoneW;
 			h = 0.0659733 * safezoneH;
 		};
 		class App8_Btn: RscButton
 		{
 			idc = 1605;
+			onButtonClick = "call app8_action;";
 
-			x = 0.469067 * safezoneW + safezoneX;
-			y = 0.565973 * safezoneH + safezoneY;
+			x = 0.469071 * safezoneW + safezoneX;
+			y = 0.532987 * safezoneH + safezoneY;
 			w = 0.061867 * safezoneW;
 			h = 0.109955 * safezoneH;
-			onButtonClick = "call app8_action;";
 		};
 		class App8_txt: RscText
 		{
 			idc = 1007;
 
 			text = "App 8 Text"; //--- ToDo: Localize;
-			x = 0.469067 * safezoneW + safezoneX;
-			y = 0.631947 * safezoneH + safezoneY;
+			x = 0.469071 * safezoneW + safezoneX;
+			y = 0.59896 * safezoneH + safezoneY;
 			w = 0.061867 * safezoneW;
 			h = 0.0439822 * safezoneH;
 		};
@@ -313,28 +313,28 @@ class XM8Apps
 			idc = 1207;
 
 			text = "#(argb,8,8,3)color(1,1,1,1)"; //--- ToDo: Localize;
-			x = 0.474222 * safezoneW + safezoneX;
-			y = 0.576969 * safezoneH + safezoneY;
+			x = 0.474225 * safezoneW + safezoneX;
+			y = 0.543982 * safezoneH + safezoneY;
 			w = 0.0515558 * safezoneW;
 			h = 0.0659733 * safezoneH;
 		};
 		class App9_Btn: RscButton
 		{
 			idc = 1609;
+			onButtonClick = "call app9_action;";
 
-			x = 0.582489 * safezoneW + safezoneX;
-			y = 0.565973 * safezoneH + safezoneY;
+			x = 0.582479 * safezoneW + safezoneX;
+			y = 0.532987 * safezoneH + safezoneY;
 			w = 0.061867 * safezoneW;
 			h = 0.109955 * safezoneH;
-			onButtonClick = "call app9_action;";
 		};
 		class App9_txt: RscText
 		{
 			idc = 1008;
 
 			text = "App 9 Text"; //--- ToDo: Localize;
-			x = 0.582489 * safezoneW + safezoneX;
-			y = 0.631947 * safezoneH + safezoneY;
+			x = 0.582479 * safezoneW + safezoneX;
+			y = 0.59896 * safezoneH + safezoneY;
 			w = 0.061867 * safezoneW;
 			h = 0.0439822 * safezoneH;
 		};
@@ -343,10 +343,20 @@ class XM8Apps
 			idc = 1208;
 
 			text = "#(argb,8,8,3)color(1,1,1,1)"; //--- ToDo: Localize;
-			x = 0.587645 * safezoneW + safezoneX;
-			y = 0.576969 * safezoneH + safezoneY;
+			x = 0.587633 * safezoneW + safezoneX;
+			y = 0.543982 * safezoneH + safezoneY;
 			w = 0.0515558 * safezoneW;
 			h = 0.0659733 * safezoneH;
+		};
+		class GoBackBtn: RscButton
+		{
+			idc = 1610;
+			text = "Go Back"; //--- ToDo: Localize;
+			x = 0.582479 * safezoneW + safezoneX;
+			y = 0.650859 * safezoneH + safezoneY;
+			w = 0.0618589 * safezoneW;
+			h = 0.0329866 * safezoneH;
+			onButtonClick = "((ctrlParent (_this select 0)) closeDisplay 8457);  execVM'XM8APPS\Scripts\open_Main_Menu.sqf';";
 		};
 	};
 };
