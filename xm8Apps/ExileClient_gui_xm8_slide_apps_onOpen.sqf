@@ -3,10 +3,10 @@
  * www.exilemod.com
  * © 2015 Exile Mod Team
  *
- * This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. 
+ * This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.
  * To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/4.0/.
  */
- 
+
 private["_display","_health","_popTabsValue","_popTabs","_respectValue","_respect", "_serverInfo", "_newControl"];
 disableSerialization;
 
@@ -32,15 +32,11 @@ _respect ctrlSetStructuredText parseText (format ["<t color='#00b2cd' font='Orbi
 
 // clear server info button text
 //Will set the text on the server info button to "XM8 Apps"
-_serverInfo = _display displayCtrl 1107; 
+_serverInfo = _display displayCtrl 1107;
 _serverInfo ctrlSetText "";
 _serverInfo ctrlSetFade 1;
 _serverInfo ctrlCommit 0;
 
-
-openApps = {
-	execVM"xm8Apps\XM8Apps_Init.sqf";
-};	
 _fix = "xm8Apps\images\xm8logofix_ca.paa";
 
 _newIcon = _display ctrlCreate ["RscPicture", 9897, _display displayCtrl 4040];
@@ -52,5 +48,5 @@ _newIcon ctrlSetText _fix;
 _newControl = _display ctrlCreate ["RscExileXM8AppButton1x1", 9898, _display displayCtrl 4040];
 _newControl ctrlSetPosition [(23.5 - 3) * (0.025), (15 - 2) * (0.04)];
 _newControl ctrlCommit 0.01;
-_newControl ctrlSetEventHandler ["ButtonClick", "call openApps"];
+_newControl ctrlSetEventHandler ["ButtonClick", " ['server', 0] call ExileClient_gui_xm8_slide; execVM'xm8Apps\XM8Apps_Init.sqf';"];
 _newControl ctrlSetStructuredText (parseText (format ["XM8 Apps"]));
