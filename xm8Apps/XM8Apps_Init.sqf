@@ -24,11 +24,7 @@ execVM"custom\deploy_bike.sqf";
 */
 
 //App 1
-_app1Text = "";
-=======
-
 _app1Text = "App 1";
->>>>>>> origin/master
 _app1Logo = "";
 app1_action = {
 
@@ -246,10 +242,10 @@ _GoBackBtn ctrlCommit 0;
 else
 {
   _display = uiNameSpace getVariable ["RscExileXM8", displayNull];
-_xm8Controlls = [991,881,992,882,993,883,994,884,995,885,996,886,997,887,998,888,999,889,9910,8810,9911,8811,9912,8812];
-{
-    _fade = _display displayCtrl _x;
-    _fade ctrlSetFade 0;
-    _fade ctrlCommit 0.5;
-} forEach _xm8Controlls;
-}
+  _xm8Controlls = [991,881,992,882,993,883,994,884,995,885,996,886,997,887,998,888,999,889,9910,8810,9911,8811,9912,8812];
+  {
+      _fade = _display displayCtrl _x;
+      _fade ctrlSetFade 0;
+      _fade ctrlCommit 0.5;
+  } forEach _xm8Controlls;
+};
