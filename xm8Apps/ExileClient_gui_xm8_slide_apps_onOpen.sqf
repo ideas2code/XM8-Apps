@@ -51,7 +51,3 @@ _newControl ctrlCommit 0.01;
 _newControl ctrlSetEventHandler ["ButtonClick", " ['server', 0] call ExileClient_gui_xm8_slide; execVM'xm8Apps\XM8Apps_Init.sqf';"];
 _newControl ctrlSetStructuredText (parseText (format ["XM8 Apps"]));
 appsOpened = false;
-ExileClientXM8CurrentSlide = "apps";
-_splash = _display displayCtrl 4002;
-_splash ctrlSetFade 1;
-_splash ctrlCommit 0;
