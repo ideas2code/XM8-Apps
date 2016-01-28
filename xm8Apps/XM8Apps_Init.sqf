@@ -6,7 +6,10 @@ Use: replaces the server info button in the XM8 and opens a apps page in in a xm
 XM8 Apps can be configured below
 */
 
-
+_display = uiNameSpace getVariable ["RscExileXM8", displayNull];
+(_display displayCtrl 4004) ctrlSetStructuredText (parseText (format ["<t align='center' font='RobotoMedium'>XM8 Apps</t>"]));
+ctrlShow [4092, false];
+_esc = (findDisplay 24015) displayAddEventHandler ["KeyDown", "if(_this select 1 == 1)then{ExileClientXM8CurrentSlide = 'apps';};"];
 /////////////////
 //CONFIG
 ////////////////
@@ -20,16 +23,11 @@ execVM"custom\deploy_bike.sqf";
 };
 */
 
-_display = uiNameSpace getVariable ["RscExileXM8", displayNull];
-(_display displayCtrl 4004) ctrlSetStructuredText (parseText (format ["<t align='center' font='RobotoMedium'>XM8 Apps</t>"]));
-ctrlShow [4092, false];
-_esc = (findDisplay 24015) displayAddEventHandler ["KeyDown", "if(_this select 1 == 1)then{ExileClientXM8CurrentSlide = 'apps';};"];
-
 //App 1
-_app1Text = "View Distance";
-_app1Logo = getText (configfile >> "CfgWeapons" >> "Binocular" >> "picture");
+_app1Text = "App 1";
+_app1Logo = "";
 app1_action = {
-  hint"App1";
+
 };
 
 //App 2
@@ -106,12 +104,21 @@ app11_action = {
 _app12Text = "Home";
 _app12Logo = "xm8Apps\images\home.paa";
 app12_action = {
+  _display = uiNameSpace getVariable ["RscExileXM8", displayNull];
+  _xm8Controlls = [991,881,992,882,993,883,994,884,995,885,996,886,997,887,998,888,999,889,9910,8810,9911,8811,9912,8812];
+  {
+      _fade = _display displayCtrl _x;
+      _fade ctrlSetFade 1;
+      _fade ctrlCommit 0.5;
+  } forEach _xm8Controlls;
   ['apps', 1] call ExileClient_gui_xm8_slide;
 };
 /////////////////
 //CONFIG END
 ////////////////
 
+if !(appsOpened)then{
+appsOpened = true;
 
 _App1Button = _display ctrlCreate ["RscExileXM8AppButton1x1", 991, _display displayCtrl 4090];
 _App1Button ctrlSetPosition [(6 - 3) * (0.025), (4 - 2) * (0.04)];
@@ -223,7 +230,6 @@ _App11Icon ctrlSetPosition [(20.9 - 3) * (0.025), (15.5 - 2) * (0.04), 2.75 * (0
 _App11Icon ctrlCommit 0.01;
 _App11Icon ctrlSetText _app11Logo;
 
-
 _App12Button = _display ctrlCreate ["RscExileXM8AppButton1x1", 9912, _display displayCtrl 4090];
 _App12Button ctrlSetPosition [(27 - 3) * (0.025), (15 - 2) * (0.04)];
 _App12Button ctrlCommit 0;
@@ -234,8 +240,17 @@ _App12Icon ctrlSetPosition [(27.9 - 3) * (0.025), (15.5 - 2) * (0.04), 2.75 * (0
 _App12Icon ctrlCommit 0.01;
 _App12Icon ctrlSetText _app12Logo;
 
-
 _GoBackBtn = _display displayCtrl 4091;
-_GoBackBtn ctrlSetPosition [0.65, 0.7];
 _GoBackBtn ctrlSetFade 1;
 _GoBackBtn ctrlCommit 0;
+}
+else
+{
+  _display = uiNameSpace getVariable ["RscExileXM8", displayNull];
+  _xm8Controlls = [991,881,992,882,993,883,994,884,995,885,996,886,997,887,998,888,999,889,9910,8810,9911,8811,9912,8812];
+  {
+      _fade = _display displayCtrl _x;
+      _fade ctrlSetFade 0;
+      _fade ctrlCommit 0.5;
+  } forEach _xm8Controlls;
+};
