@@ -26,10 +26,10 @@ ctrlShow [4092, false];
 _esc = (findDisplay 24015) displayAddEventHandler ["KeyDown", "if(_this select 1 == 1)then{ExileClientXM8CurrentSlide = 'apps';};"];
 
 //App 1
-_app1Text = "View Distance";
+_app1Text = "";
 _app1Logo = "";
 app1_action = {
-  hint"App1";
+  
 };
 
 //App 2
