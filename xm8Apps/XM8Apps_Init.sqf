@@ -25,6 +25,10 @@ execVM"custom\deploy_bike.sqf";
 
 //App 1
 _app1Text = "";
+=======
+
+_app1Text = "App 1";
+>>>>>>> origin/master
 _app1Logo = "";
 app1_action = {
 
