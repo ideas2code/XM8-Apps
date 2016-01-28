@@ -27,7 +27,7 @@ _esc = (findDisplay 24015) displayAddEventHandler ["KeyDown", "if(_this select 1
 
 //App 1
 _app1Text = "View Distance";
-_app1Logo = getText (configfile >> "CfgWeapons" >> "Binocular" >> "picture");
+_app1Logo = "";
 app1_action = {
   hint"App1";
 };
