@@ -29,6 +29,8 @@ _app1Text = "App 1";
 _app1Logo = "";
 app1_action = {
 
+};
+
 //App 2
 _app2Text = "App 2";
 _app2Logo = "";
