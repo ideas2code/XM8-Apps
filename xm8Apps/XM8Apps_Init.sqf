@@ -105,6 +105,14 @@ _app12Text = "Home";
 _app12Logo = "xm8Apps\images\home.paa";
 app12_action = {
   ['apps', 1] call ExileClient_gui_xm8_slide;
+  
+  _display = uiNameSpace getVariable ["RscExileXM8", displayNull];
+  _xm8Controlls = [991,881,992,882,993,883,994,884,995,885,996,886,997,887,998,888,999,889,9910,8810,9911,8811,9912,8812];
+  {
+      _fade = _display displayCtrl _x;
+      _fade ctrlSetFade 1;
+      _fade ctrlCommit 0;
+  } forEach _xm8Controlls;
 };
 /////////////////
 //CONFIG END
