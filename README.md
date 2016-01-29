@@ -3,8 +3,8 @@ XM8 Apps is a XM8 dialogue that is configurable by the server admins that allows
 You can use it to execute just about any script all from one neat place, instead of having horrible scroll wheel actions.
 
 ### 28/1/2016 Update
-* Removed the Need for extra dialogue files (Smaller mission files)
-* Now uses exiles slides system (YAY COOL ANIMATIONS)
+* Removed the need for extra dialogue files (Smaller mission files)
+* Now uses Exile's slides system (YAY COOL ANIMATIONS)
 
 ## Info
 For any of you scripters out there Hollow is hosting a XM8 apps contest with a $50 prize.
