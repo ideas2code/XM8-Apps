@@ -15,6 +15,8 @@ _app1Logo = "xm8Apps\images\bikeLog.paa"; //The Logo that will Appear on the app
 app1_action = {
 execVM"custom\deploy_bike.sqf";
 };
+
+If you want to change what button the XM8 Apps appears on edit ExileClient_gui_xm8_slide_apps_onOpen.sqf
 */
 
 
