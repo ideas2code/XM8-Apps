@@ -7,7 +7,7 @@ You can use it to execute just about any script all from one neat place, instead
 * Now uses Exile's slides system (YAY COOL ANIMATIONS)
 
 ## Info
-For any of you scripters out there Hollow is hosting a XM8 apps contest with a $50 prize.
+For any of you scripters out there Hollow is hosting a XM8 apps contest with a $120 prize.
 Go check it out http://www.exilemod.com/topic/9262-xm8-app-contest/
 
 
