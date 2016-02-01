@@ -22,7 +22,7 @@ If you want to change what button the XM8 Apps appears on edit ExileClient_gui_x
 
 //App 1
 _app1Text = "";
-_app1Logo = ""
+_app1Logo = "";
 app1_action = {
 
 };
