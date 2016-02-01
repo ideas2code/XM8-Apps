@@ -48,6 +48,5 @@ _newIcon ctrlSetText _fix;
 _newControl = _display ctrlCreate ["RscExileXM8AppButton1x1", 9898, _display displayCtrl 4040];
 _newControl ctrlSetPosition [(23.5 - 3) * (0.025), (15 - 2) * (0.04)];
 _newControl ctrlCommit 0.01;
-_newControl ctrlSetEventHandler ["ButtonClick", " ['server', 0] call ExileClient_gui_xm8_slide; execVM'xm8Apps\XM8Apps_Init.sqf';"];
+_newControl ctrlSetEventHandler ["ButtonClick", "execVM'xm8Apps\XM8Apps_Init.sqf';"];
 _newControl ctrlSetStructuredText (parseText (format ["XM8 Apps"]));
-appsOpened = false;
