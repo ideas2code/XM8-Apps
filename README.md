@@ -1,33 +1,24 @@
-# Update 
-Fixed the Red tint when hovering over the xm8 apps button thanks to andrew_s90 (http://www.exilemod.com/profile/14063-andrew_s90/)
+# XM8 Apps for Exile
+XM8 Apps is a XM8 dialogue that is configurable by the server admins that allows you to set it up to do things such as deploy bike and change view distance.
+You can use it to execute just about any script all from one neat place, instead of having horrible scroll wheel actions.
 
-Added the much requested Go Back button to the Xm8 apps page 
+### 28/1/2016 Update
+* Removed the need for extra dialogue files (Smaller mission files)
+* Now uses Exile's slides system (YAY COOL ANIMATIONS)
 
-#Info 
-For any of you scripters out there Hollow is hosting a Xpm apps contest with a $50 prize. Go check it out http://www.exilemod.com/topic/9262-xm8-app-contest/
+## Info
+For any of you scripters out there Hollow is hosting a XM8 apps contest with a $120 prize.
+Go check it out http://www.exilemod.com/topic/9262-xm8-app-contest/
 
 
-# XM8-Apps
+### Installation
 
-Installation 
-Drag the xm8Apps folder in to the root of your mission folder
-
-In description.ext add
-#include"xm8Apps\defines.hpp"
-#include"xm8Apps\Xm8Apps.hpp"
-
-defines has to be first
-
-in your config.cpp find class CfgExileCustomCode and add 
-ExileClient_gui_xm8_slide_apps_onOpen = "xm8Apps\ExileClient_gui_xm8_slide_apps_onOpen.sqf";
-inside the { 
-so it would look like 
-
-class CfgExileCustomCode 
-{
-	ExileClient_gui_xm8_slide_apps_onOpen = "xm8Apps\ExileClient_gui_xm8_slide_apps_onOpen.sqf";
-};
-
-If you are using infiSTAR you will need to add 8457 to allowed dialogs in the infiSTAR config
-
-thats it your done!
+1. Drag the xm8Apps folder in to the root of your mission folder
+2. In your config.cpp find `class CfgExileCustomCode`
+	1. Add `ExileClient_gui_xm8_slide_apps_onOpen = "xm8Apps\ExileClient_gui_xm8_slide_apps_onOpen.sqf";` inside `class CfgExileCustomCode` so it would look like:
+		```
+		class CfgExileCustomCode {
+			ExileClient_gui_xm8_slide_apps_onOpen = "xm8Apps\ExileClient_gui_xm8_slide_apps_onOpen.sqf";
+		};
+		```
+3. That's it, you're done!
